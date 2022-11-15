@@ -1,0 +1,136 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem; 
+}
+
+.main-container {
+    min-width: var(--max-width-mobile);
+    max-width: var(--max-width-desktop);
+    margin: 57px auto 0px;
+    align-items: center;
+    width: 100%;
+    border-radius: 2em;
+    /* display para el desktop */
+
+    /* PARA QUE LA CAJA QUEDE CENTRADA: */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ---------------cajas de colores --------------------------*/
+.card_sedans {
+    background-color: var(--primary-1);
+    
+}
+
+.card_suvs {
+    background-color: var(--primary-2);
+}
+
+.card_luxury {
+    background-color: var(--primary-3);
+    
+}
+
+.img {
+    margin-bottom: 36px;
+}
+
+/* ----------------botones---------------------- 1 */
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--neutral-2);
+    /* TAMBIEN SE PUEDE METER 
+    outline-style: solid #color;
+    */
+}
+
+/* boton 1 */
+.btn_1{
+    color: var(--primary-1);    
+}
+
+.btn_1:hover{
+    background-color: var(--primary-1);
+    color: var(--neutral-2);
+}
+
+
+/* boton 2 */
+.btn_2{
+    color: var(--primary-2);
+}
+.btn_2:hover{
+    background-color: var(--primary-2);
+    color: var(--neutral-2);
+}
+
+/* boton 3 */
+.btn_3{
+    color: var(--primary-3);
+}
+
+.btn_3:hover{
+    background-color: var(--primary-3);
+    color: var(--neutral-2);
+}
+
+
+/*------------ COPY PAST------------------*/
+/* @media query */
+
+@media screen and (min-width:600px) {
+
+    /* Para que esté en 3 columnas: flex */
+    .my-body {
+      font-size: clamp(1em, 2vw, 2em);
+      line-height: 1.8em;
+    }
+  
+    .title {  
+      line-height: 1.4em;
+    }
+     
+    .main-container {
+      display: flex;
+      border-top-right-radius: var(--border-radius);
+      border-bottom-left-radius: 0;
+    }
+    
+   
+    /* MIO */
+    .card_sedans {
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+      
+    .card_luxury {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+}
+  
+
+/* -----en desktop----- */
+  /* cajas de colores */
+  @media screen and (max-width:600px) { 
+    .card_sedans {    
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card_luxury {
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+}

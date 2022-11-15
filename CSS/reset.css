@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    /* el contenido siempre se ajusta al contenedor */
+    box-sizing: border-box;
+    /* se resetean a 0 para que lo que se añade de manera automática se elimine y tengamos total control sobre ellos: */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;   
+    background-color: var(--neutral-2);
+    /* -webkit-text-size-adjust: 100%; QUÉ CARALLO ERA ESTO?*/
+}
+
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--neutral-1) ;
+    color: var(--neutral-2);
+    line-height: 25px;
+    /* font-weight: 400; */
+    
+}
+
+h1 {
+    color: var(--neutral-2);    
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+    /* mayusculas: */
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  
+}
+
+.img {
+    display: block;
+    /* tamaño OK */
+}
+
+section {
+    max-width: 278px;
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+    
+}
+
+
+p{
+    color: var(--neutral-1);
+    margin-bottom: 25px;
+}
+
+
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    background-color: var(--neutral-2);
+    border-style: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    
+   
+}
+
+
+
+
+
+/* SI PONEMOS a EN LUGAR DE button quitar decoraciones de los links */
+/* SI LO PONEMOS EN A tiene que ser en bloque, no en linea */
+
+a:link{
+    
+}/* text-decoration:none; */
+
